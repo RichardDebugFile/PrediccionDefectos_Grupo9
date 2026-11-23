@@ -1,0 +1,13 @@
+# Datos descargados (se obtienen con scripts/01_descargar_datos.py)
+data/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Editores
+.vscode/
+.idea/

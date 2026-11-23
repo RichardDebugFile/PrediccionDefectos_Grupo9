@@ -1,0 +1,136 @@
+{
+  "CM1": {
+    "modules": 327,
+    "features": 37,
+    "defective": 42,
+    "pct_defective": 12.84,
+    "duplicates": 0,
+    "inconsistent_groups": 0,
+    "missing": 0,
+    "negative_values": 0,
+    "constant_features": 0,
+    "loc_total_zero": 0,
+    "sha256": "870f523699f25bb78c1b6dab73961be8380cd73f3fd41fefe961c65048876a79",
+    "advertencias": [],
+    "checks": {
+      "conteos_tabla1": true,
+      "sin_duplicados": true,
+      "sin_inconsistentes": true,
+      "sin_faltantes": true,
+      "sin_negativos": true,
+      "sin_constantes": true
+    }
+  },
+  "JM1": {
+    "modules": 7720,
+    "features": 21,
+    "defective": 1612,
+    "pct_defective": 20.88,
+    "duplicates": 0,
+    "inconsistent_groups": 0,
+    "missing": 0,
+    "negative_values": 0,
+    "constant_features": 0,
+    "loc_total_zero": 0,
+    "sha256": "579060380b8d8cb1d9d9414ebf2eb742c9c90faf491ff1182e2c15bb2aaac022",
+    "advertencias": [],
+    "checks": {
+      "conteos_tabla1": true,
+      "sin_duplicados": true,
+      "sin_inconsistentes": true,
+      "sin_faltantes": true,
+      "sin_negativos": true,
+      "sin_constantes": true
+    }
+  },
+  "KC1": {
+    "modules": 1162,
+    "features": 21,
+    "defective": 294,
+    "pct_defective": 25.3,
+    "duplicates": 0,
+    "inconsistent_groups": 0,
+    "missing": 0,
+    "negative_values": 0,
+    "constant_features": 0,
+    "loc_total_zero": 0,
+    "sha256": "5cea7a3e02ff9954a74b3ef29ad895afaacff82a8c9cf63c8b90023d497a4ca8",
+    "advertencias": [],
+    "checks": {
+      "conteos_tabla1": true,
+      "sin_duplicados": true,
+      "sin_inconsistentes": true,
+      "sin_faltantes": true,
+      "sin_negativos": true,
+      "sin_constantes": true
+    }
+  },
+  "PC1": {
+    "modules": 679,
+    "features": 37,
+    "defective": 55,
+    "pct_defective": 8.1,
+    "duplicates": 0,
+    "inconsistent_groups": 0,
+    "missing": 0,
+    "negative_values": 0,
+    "constant_features": 0,
+    "loc_total_zero": 0,
+    "sha256": "9d1dd98f7f121206813cc0be4fcbc9fe4502ca42cca882e697bb300109046f21",
+    "advertencias": [],
+    "checks": {
+      "conteos_tabla1": true,
+      "sin_duplicados": true,
+      "sin_inconsistentes": true,
+      "sin_faltantes": true,
+      "sin_negativos": true,
+      "sin_constantes": true
+    }
+  },
+  "PC3": {
+    "modules": 1053,
+    "features": 37,
+    "defective": 130,
+    "pct_defective": 12.35,
+    "duplicates": 0,
+    "inconsistent_groups": 0,
+    "missing": 0,
+    "negative_values": 0,
+    "constant_features": 0,
+    "loc_total_zero": 0,
+    "sha256": "71e058433f948fe331326d2d179472b7176115aa27d256657f60ad130160fe48",
+    "advertencias": [],
+    "checks": {
+      "conteos_tabla1": true,
+      "sin_duplicados": true,
+      "sin_inconsistentes": true,
+      "sin_faltantes": true,
+      "sin_negativos": true,
+      "sin_constantes": true
+    }
+  },
+  "PC4": {
+    "modules": 1270,
+    "features": 37,
+    "defective": 176,
+    "pct_defective": 13.86,
+    "duplicates": 0,
+    "inconsistent_groups": 0,
+    "missing": 0,
+    "negative_values": 0,
+    "constant_features": 0,
+    "loc_total_zero": 7,
+    "sha256": "4a55be821b0198c60caabf5b88e8c7e5254bb58be7fe4f097c9d2d2ee15c4f87",
+    "advertencias": [
+      "7 módulos con LOC_TOTAL = 0"
+    ],
+    "checks": {
+      "conteos_tabla1": true,
+      "sin_duplicados": true,
+      "sin_inconsistentes": true,
+      "sin_faltantes": true,
+      "sin_negativos": true,
+      "sin_constantes": true
+    }
+  }
+}

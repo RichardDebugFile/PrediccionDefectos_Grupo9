@@ -1,0 +1,7 @@
+dataset,modulos,atributos,defectuosos,pct_defectuosos,ratio_desbalance,asimetria_mediana_original,asimetria_mediana_log
+CM1,327,37,42,12.84,6.79,3.53,0.54
+JM1,7720,21,1612,20.88,3.79,13.98,0.28
+KC1,1162,21,294,25.3,2.95,2.94,-0.11
+PC1,679,37,55,8.1,11.35,5.62,0.6
+PC3,1053,37,130,12.35,7.1,8.72,0.73
+PC4,1270,37,176,13.86,6.22,3.44,0.25
