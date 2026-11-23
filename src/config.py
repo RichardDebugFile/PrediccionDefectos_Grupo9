@@ -13,9 +13,10 @@ FIGURES_DIR = ROOT / "figures"
 DATASETS = ["CM1", "JM1", "KC1", "PC1", "PC3", "PC4"]
 
 # Réplica pública de los datos de Shepperd et al. (mantenida por C. Tantithamthavorn).
+# Commit comprobado contra las seis huellas SHA-256 de los experimentos.
 # %27%27 = D'' codificado para URL.
 REPLICA_URL = (
-    "https://raw.githubusercontent.com/klainfo/NASADefectDataset/master/"
+    "https://raw.githubusercontent.com/klainfo/NASADefectDataset/9a25ad697a4f3177ea541392e9ed21005d5f7aa1/"
     "CleanedData/MDP/D%27%27/{name}.arff"
 )
 # Archivo oficial (figshare, CC BY 4.0). Se descarga a mano y se compara con

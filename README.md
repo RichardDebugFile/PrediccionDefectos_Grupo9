@@ -5,7 +5,7 @@ Enzo Cortez, Ricardo Hidalgo y Sebastián Panchi.
 
 Código de la Entrega 2 (métodos y resultados preliminares). Evalúa un perceptrón multicapa (MLP) frente a
 regresión logística (LR) y bosque aleatorio (RF) sobre los conjuntos NASA MDP
-depurados (versión D''), con y sin balanceo de clases.
+de la réplica de GitHub publicada como D'', con y sin balanceo de clases.
 
 ## Estado
 
@@ -63,12 +63,10 @@ data/            datos descargados (no se versionan)
 
 ## Decisiones metodológicas
 
-- **Datos.** Versión D'' de Shepperd et al. (2013), la que sus autores recomiendan.
-  El script descarga la réplica pública de GitHub mantenida por C. Tantithamthavorn.
-  Falta compararla con el archivo oficial de figshare
-  (https://doi.org/10.6084/m9.figshare.6071675.v1, licencia CC BY 4.0): descargar
-  `MDP.zip`, descomprimir y ejecutar
-  `python scripts/02_verificar_datos.py --figshare-dir "<carpeta con los .arff de D''>"`.
+- **Datos.** El script descarga la réplica pública mantenida por C. Tantithamthavorn.
+  Los resultados preliminares corresponden a esa réplica. La descarga apunta a
+  un [commit fijo](https://github.com/klainfo/NASADefectDataset/tree/9a25ad697a4f3177ea541392e9ed21005d5f7aa1)
+  cuyos seis archivos coinciden con las huellas de `results/verificacion_datos.json`.
 - **Sin fuga de datos.** La transformación log(1 + x), el escalado y SMOTE están
   dentro de un `Pipeline` de imbalanced-learn, así que en cada partición se ajustan
   solo con los datos de entrenamiento y SMOTE nunca toca la partición de prueba.
@@ -93,6 +91,29 @@ D'' conserva 7 módulos de PC4 con `LOC_TOTAL = 0` pero `NUMBER_OF_LINES` entre
 documentan Petrić et al. (2016). Los 7 son no defectuosos (0,6 % de PC4). Por
 ahora se mantienen para no alterar D''; el grupo debe decidir si los elimina y
 declararlo en el artículo.
+
+## Cotejo con los datos oficiales de Figshare
+
+Se compararon las filas como multiconjuntos conservando la multiplicidad, con
+atributos redondeados a seis decimales y etiquetas binarias. Figshare contiene
+todas las filas de la réplica bajo ese criterio. Las columnas coinciden en
+nombre y orden. Los archivos de los seis conjuntos difieren a nivel de bytes.
+
+| Conjunto | Réplica utilizada | Figshare D'' | Filas adicionales en Figshare |
+|---|---:|---:|---:|
+| CM1 | 327 | 327 | 0 |
+| JM1 | 7720 | 7782 | 62 |
+| KC1 | 1162 | 1183 | 21 |
+| PC1 | 679 | 705 | 26 |
+| PC3 | 1053 | 1077 | 24 |
+| PC4 | 1270 | 1287 | 17 |
+
+Fuente oficial [MDP.zip, versión 1](https://doi.org/10.6084/m9.figshare.6071675.v1) (CC BY 4.0).
+SHA-256 del ZIP `476b3004a800f26e4429536705ead818539556ded09187bd94289696b7bfa035`.
+Para repetir el control de equivalencia, extraer el ZIP y ejecutar
+`python scripts/02_verificar_datos.py --figshare-dir "<carpeta MDP/D''>"`.
+El comando informa cinco diferencias esperadas y devuelve código de salida 1.
+La comparación de rendimiento con los archivos oficiales queda para la fase final.
 
 ## Salidas
 
